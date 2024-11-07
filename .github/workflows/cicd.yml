@@ -16,7 +16,7 @@ jobs:
       - name: Generate SBOM
         uses: anchore/sbom-action@v0
         with:
-          path: ./go-src/
+          path: ./js-src/
           format: spdx-json
           output-file: sbom.spdx.json
       - name: Report SPDX SBOM to Ketryx
