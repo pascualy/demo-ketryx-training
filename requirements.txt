@@ -1,1 +1,1 @@
-rdiffweb
+rdiffweb==2.5.7
