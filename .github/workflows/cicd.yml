@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - 'feature/snehak'
+      - 'main-tket'
 
 jobs:
   create-sbom:
@@ -24,7 +24,7 @@ jobs:
         if: success() || failure()
         with:
           ketryx-url: ${{ vars.KETRYX_URL }}
-          project: ${{ vars.KETRYX_PROJECT_SNEHA }}
+          project: ${{ vars.KETRYX_PROJECT_TANISHKA }}
           api-key: ${{ secrets.KETRYX_API_KEY_SNEHA }}
           commit-sha: ${{ github.event.pull_request.head.sha || github.sha }}
           build-name: ci-sbom
