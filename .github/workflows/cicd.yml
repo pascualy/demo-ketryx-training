@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - 'main-charles-demo'
+      - 'main-charlie-demo'
 
 jobs:
   create-sbom:
